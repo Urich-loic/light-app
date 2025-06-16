@@ -5,8 +5,8 @@
     </div>
     <div>
         <button class="btn btn-danger" wire:click="off">Off</button>
-        <button class="btn btn-secondary" wire:click="minus">-</button>
-        <button class="btn btn-secondary" wire:click="plus">+</button>
+        <button class="btn btn-secondary " @if($brightness == 10)disabled @endif wire:click="minus">-</button>
+        <button class="btn btn-secondary" @if($brightness == 100) disabled @endif >+</button>
         <button class="btn btn-primary" wire:click="allume">On</button>
     </div>
 </div>
